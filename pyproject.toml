@@ -1,0 +1,18 @@
+[project]
+name = "tokenscope"
+version = "0.1.0"
+description = "Explore your Claude Code token usage, estimated cost, and prompt-cache misses from local transcripts."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["textual>=8"]
+
+[project.scripts]
+tokenscope = "tokenscope.cli:main"
+
+[project.urls]
+Repository = "https://github.com/spyderrsh/tokenscope"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
